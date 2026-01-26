@@ -1,0 +1,149 @@
+/* -------------------------------------------------------------------------- *
+ * SeriesElasticActuator.cpp - FIXED VERSION                                  *
+ * -------------------------------------------------------------------------- */
+#include "SeriesElasticActuator.h"
+#include <OpenSim/OpenSim.h>
+#include <iostream>
+
+using namespace OpenSim;
+using namespace SimTK;
+using namespace std;
+
+//==============================================================================
+// 1. COSTRUTTORI
+//==============================================================================
+// Costruttore di Default
+SeriesElasticActuator::SeriesElasticActuator() {
+    constructProperties();
+    // È buona norma aggiungerle anche qui per sicurezza
+    addStateVariable("motor_angle", Stage::Dynamics);
+    addStateVariable("motor_speed", Stage::Dynamics);
+}
+
+// Costruttore Parametrico
+SeriesElasticActuator::SeriesElasticActuator(const std::string& name, double inertia, double damping, double k) {
+    constructProperties();
+    setName(name);
+    
+    // Settaggio parametri
+    set_motor_inertia(inertia);
+    set_motor_damping(damping);
+    set_stiffness(k);
+
+    // Definizione Variabili di Stato
+    addStateVariable("motor_angle", Stage::Dynamics);
+    addStateVariable("motor_speed", Stage::Dynamics);
+}
+
+//==============================================================================
+// 2. PROPRIETÀ
+//==============================================================================
+void SeriesElasticActuator::constructProperties() {
+    constructProperty_motor_inertia(0.1); 
+    constructProperty_motor_damping(0.01); 
+    constructProperty_stiffness(1000.0);   
+}
+
+//==============================================================================
+// 3. REGISTRAZIONE NEL SISTEMA (CRUCIALE)
+//==============================================================================
+void SeriesElasticActuator::extendAddToSystem(MultibodySystem& system) const {
+    // Chiamata alla base (fondamentale)
+    Super::extendAddToSystem(system);
+
+    // --- FIX ROBUSTO ---
+    // Usiamo const_cast per assicurarci che le variabili siano aggiunte 
+    // anche se i costruttori o le copie hanno fallito nel farlo.
+    SeriesElasticActuator* mutableThis = const_cast<SeriesElasticActuator*>(this);
+    
+    // Controlliamo se sono già state aggiunte per evitare duplicati
+    if (mutableThis->getNumStateVariables() == 0) {
+        std::cout << "[SEA INFO] Forcing state variable registration in extendAddToSystem" << std::endl;
+        mutableThis->addStateVariable("motor_angle", Stage::Dynamics);
+        mutableThis->addStateVariable("motor_speed", Stage::Dynamics);
+    }
+}
+
+//==============================================================================
+// 4. CALCOLO DERIVATE
+//==============================================================================
+void SeriesElasticActuator::computeStateVariableDerivatives(const SimTK::State& s) const {
+    Super::computeStateVariableDerivatives(s);
+
+    // 1. Parametri
+    double Jm = get_motor_inertia();
+    double Bm = get_motor_damping();
+    double K  = get_stiffness();
+    if (Jm < 1e-9) Jm = 1e-9; // Protezione divisione per zero
+
+    // 2. Recupero Stati (Usando i nomi stringa definiti in addStateVariable)
+    // Nota: getStateVariableValue fa un lookup automatico.
+    double theta_m = getStateVariableValue(s, "motor_angle");
+    double omega_m = getStateVariableValue(s, "motor_speed");
+
+    // 3. Coordinate del Giunto (Lato Arto)
+    const Coordinate& coord = getConnectee<Coordinate>("coordinate");
+    double theta_joint = coord.getValue(s); 
+
+    // 4. Input di Controllo
+    double tau_input = 0.0;
+    if(isCacheVariableValid(s, "control")) {
+         tau_input = getControls(s)[0];
+    }
+    // Debug output solo se c'è movimento/input significativo
+    if (std::abs(tau_input) > 0.001 || std::abs(omega_m) > 0.001) {
+         // De-commenta per debug intenso
+         // std::cout << "t=" << s.getTime() << " T_in=" << tau_input << " w=" << omega_m << std::endl;
+    }
+
+    // --- DINAMICA ---
+    // Coppia elastica: K * (theta_motore - theta_giunto)
+    double tau_spring = K * (theta_m - theta_joint);
+
+    // Equazioni del moto:
+    // d(theta)/dt = omega
+    double theta_m_dot = omega_m;
+    // J * d(omega)/dt = Tau_in - Tau_spring - Damping
+    double omega_m_dot = (tau_input - tau_spring - (Bm * omega_m)) / Jm;
+
+    // 5. Settaggio Derivate
+    setStateVariableDerivativeValue(s, "motor_angle", theta_m_dot);
+    setStateVariableDerivativeValue(s, "motor_speed", omega_m_dot);
+}
+
+//==============================================================================
+// 5. APPLICAZIONE FORZA
+//==============================================================================
+void SeriesElasticActuator::computeForce(const SimTK::State& s, 
+                                         SimTK::Vector_<SimTK::SpatialVec>& bodyForces, 
+                                         SimTK::Vector& generalizedForces) const {
+    
+    // 1. Parametri
+    double K = get_stiffness();
+
+    // 2. Stati
+    // Rimosso il try-catch silenzioso. Se fallisce qui, VOGLIAMO che esploda l'errore
+    // per capire che manca la variabile.
+    double theta_m = getStateVariableValue(s, "motor_angle");
+    
+    const Coordinate& coord = getConnectee<Coordinate>("coordinate");
+    double theta_joint = coord.getValue(s);
+
+    // 3. Calcolo Forza trasmessa
+    double tau_transmitted = K * (theta_m - theta_joint);
+
+    // 4. Applicazione
+    applyGeneralizedForce(s, coord, tau_transmitted, generalizedForces);
+}
+
+//==============================================================================
+// 6. POTENZA
+//==============================================================================
+double SeriesElasticActuator::getPower(const SimTK::State& s) const {
+    double omega_m = getStateVariableValue(s, "motor_speed");
+    double tau_input = 0.0;
+    if(isCacheVariableValid(s, "control")) {
+         tau_input = getControls(s)[0];
+    }
+    return tau_input * omega_m;
+}
