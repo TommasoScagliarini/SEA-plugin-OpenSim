@@ -269,9 +269,9 @@
 					<!--Path to a Component that satisfies the Socket 'coordinate' of type Coordinate (description: Coordinata da controllare).-->
 					<socket_coordinate>/jointset/theta2/theta2</socket_coordinate>
 					<!--Guadagno proporzionale-->
-					<kp>10</kp>
+					<kp>50</kp>
 					<!--Guadagno derivativo-->
-					<kv>5</kv>
+					<kv>2.5</kv>
 				</CustomController>
 			</objects>
 			<groups />

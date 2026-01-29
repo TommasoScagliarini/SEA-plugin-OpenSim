@@ -109,7 +109,7 @@ int main() {
         bool CustomControl = true;
         // 7. Controller di esempio (Sinusoide per vedere il movimento)
         if (CustomControl){
-            CustomController* controller = new CustomController(10.0, 5.0); // kp=10, kv=5
+            CustomController* controller = new CustomController(50.0, 2.5); // kp=10, kv=5 3.5
             controller->setActuators(model.updActuators());
             controller->connectSocket_coordinate(joint2->getCoordinate());
             model.addController(controller);
@@ -117,7 +117,8 @@ int main() {
             PrescribedController* controller = new PrescribedController();
             controller->addActuator(*sea);
             // Applica una coppia sinusoidale: 5 * sin(t)
-            controller->prescribeControlForActuator("SEA", new Sine(5.0, 1.0, 0.0)); 
+            //controller->prescribeControlForActuator("SEA", new Sine(5.0, 1.0, 0.0));
+            controller->prescribeControlForActuator("SEA", new Constant(0)); 
             model.addController(controller);
         }
         
@@ -133,6 +134,13 @@ int main() {
 
         // 9. Output
         manager.getStateStorage().print("/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/Acrobot_Results.sto");
+        
+        auto controlsTable = model.getControlsTable();
+        STOFileAdapter::write(controlsTable, "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/Acrobat_controls.sto");
+        
+        // auto forcesTable = forces->getForcesTable();
+        // STOFileAdapter::write(forcesTable, "actuator_forces.sto");
+        
         model.print("/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/Acrobot.osim");
         cout << "--- Simulazione completata. Generato Acrobot.osim ---" << endl;
 
