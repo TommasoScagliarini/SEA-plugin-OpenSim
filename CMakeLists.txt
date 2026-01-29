@@ -27,16 +27,7 @@ target_link_libraries(${TARGET} ${OpenSim_LIBRARIES})
 target_compile_options(${TARGET} PUBLIC "-fno-char8_t")
 
 # --- 2. CREAZIONE PLUGIN (NUOVA PARTE PER LA GUI) ---
-# Creiamo una libreria condivisa (SHARED) escludendo il file con il main()
-# Nota: PistonActuator.cpp è il file che contiene il componente, toyLeg_example contiene il main.
-# Includiamo solo il codice dell'attuatore nella libreria.
 add_library(${PLUGIN_TARGET} SHARED SeriesElasticActuator.cpp Plugin_interface.cpp)
-
-# # Impostiamo le proprietà per rimuovere "lib" dal nome file
-# set_target_properties(${PLUGIN_TARGET} PROPERTIES 
-#     PREFIX ""  # Toglie "lib"
-#     SUFFIX ".dylib"
-# )
 
 # Link ed opzioni per la libreria (identiche all'eseguibile)
 target_link_libraries(${PLUGIN_TARGET} ${OpenSim_LIBRARIES})
@@ -66,29 +57,3 @@ add_executable(Test_SEA_App
 # Link alle librerie di OpenSim
 target_link_libraries(Test_SEA_App ${OpenSim_LIBRARIES})
 target_compile_options(Test_SEA_App PUBLIC "-fno-char8_t")
-
-# =================================================================================
-# ||                                                                              
-# ||
-# ||
-# =================================================================================
-
-
-# cmake_minimum_required(VERSION 3.15)
-# project(SEATestProject)
-
-# # Impostazioni Standard
-# set(CMAKE_CXX_STANDARD 14)
-# set(CMAKE_CXX_STANDARD_REQUIRED ON)
-# set(CMAKE_OSX_ARCHITECTURES "x86_64") # Se sei su Mac, altrimenti ignora
-
-# # Trova OpenSim
-# find_package(OpenSim REQUIRED PATHS "${OPENSIM_INSTALL_DIR}")
-
-# # Crea Eseguibile
-# # Nota: Compiliamo SOLO il file main. Il codice del SEA è incluso via header.
-# add_executable(Test_SEA_App Test_SEA.cpp)
-
-# # Link
-# target_link_libraries(Test_SEA_App ${OpenSim_LIBRARIES})
-# target_compile_options(Test_SEA_App PUBLIC "-fno-char8_t")
