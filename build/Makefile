@@ -155,6 +155,33 @@ Test_SEA_App/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/build
 .PHONY : Test_SEA_App/fast
 
+CustomControl.o: CustomControl.cpp.o
+.PHONY : CustomControl.o
+
+# target to build an object file
+CustomControl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o
+.PHONY : CustomControl.cpp.o
+
+CustomControl.i: CustomControl.cpp.i
+.PHONY : CustomControl.i
+
+# target to preprocess a source file
+CustomControl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.i
+.PHONY : CustomControl.cpp.i
+
+CustomControl.s: CustomControl.cpp.s
+.PHONY : CustomControl.s
+
+# target to generate assembly for a file
+CustomControl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.s
+.PHONY : CustomControl.cpp.s
+
 Plugin_interface.o: Plugin_interface.cpp.o
 .PHONY : Plugin_interface.o
 
@@ -212,32 +239,32 @@ SeriesElasticActuator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.s
 .PHONY : SeriesElasticActuator.cpp.s
 
-Test_SEA.o: Test_SEA.cpp.o
-.PHONY : Test_SEA.o
+Test_Sea_Acrobot.o: Test_Sea_Acrobot.cpp.o
+.PHONY : Test_Sea_Acrobot.o
 
 # target to build an object file
-Test_SEA.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o
-.PHONY : Test_SEA.cpp.o
+Test_Sea_Acrobot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o
+.PHONY : Test_Sea_Acrobot.cpp.o
 
-Test_SEA.i: Test_SEA.cpp.i
-.PHONY : Test_SEA.i
+Test_Sea_Acrobot.i: Test_Sea_Acrobot.cpp.i
+.PHONY : Test_Sea_Acrobot.i
 
 # target to preprocess a source file
-Test_SEA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.i
-.PHONY : Test_SEA.cpp.i
+Test_Sea_Acrobot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.i
+.PHONY : Test_Sea_Acrobot.cpp.i
 
-Test_SEA.s: Test_SEA.cpp.s
-.PHONY : Test_SEA.s
+Test_Sea_Acrobot.s: Test_Sea_Acrobot.cpp.s
+.PHONY : Test_Sea_Acrobot.s
 
 # target to generate assembly for a file
-Test_SEA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.s
-.PHONY : Test_SEA.cpp.s
+Test_Sea_Acrobot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleCustomActuator.dir/build.make CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test_SEA_App.dir/build.make CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.s
+.PHONY : Test_Sea_Acrobot.cpp.s
 
 # Help Target
 help:
@@ -250,15 +277,18 @@ help:
 	@echo "... SEA_Plugin_V2"
 	@echo "... Test_SEA_App"
 	@echo "... exampleCustomActuator"
+	@echo "... CustomControl.o"
+	@echo "... CustomControl.i"
+	@echo "... CustomControl.s"
 	@echo "... Plugin_interface.o"
 	@echo "... Plugin_interface.i"
 	@echo "... Plugin_interface.s"
 	@echo "... SeriesElasticActuator.o"
 	@echo "... SeriesElasticActuator.i"
 	@echo "... SeriesElasticActuator.s"
-	@echo "... Test_SEA.o"
-	@echo "... Test_SEA.i"
-	@echo "... Test_SEA.s"
+	@echo "... Test_Sea_Acrobot.o"
+	@echo "... Test_Sea_Acrobot.i"
+	@echo "... Test_Sea_Acrobot.s"
 .PHONY : help
 
 

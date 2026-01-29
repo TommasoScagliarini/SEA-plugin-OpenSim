@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o"
+  "CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o.d"
   "CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o"
   "CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o.d"
-  "CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o"
-  "CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o.d"
+  "CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o"
+  "CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o.d"
   "Test_SEA_App"
   "Test_SEA_App.pdb"
 )

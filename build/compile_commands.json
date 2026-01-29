@@ -1,6 +1,12 @@
 [
 {
   "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
+  "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp",
+  "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp",
+  "output": "CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o"
+},
+{
+  "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
   "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Plugin_interface.cpp",
   "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Plugin_interface.cpp",
   "output": "CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o"
@@ -13,9 +19,9 @@
 },
 {
   "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
-  "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp",
-  "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp",
-  "output": "CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o"
+  "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp",
+  "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp",
+  "output": "CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o"
 },
 {
   "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
@@ -31,14 +37,20 @@
 },
 {
   "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
-  "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp",
-  "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp",
-  "output": "CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o"
+  "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp",
+  "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp",
+  "output": "CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o"
 },
 {
   "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
   "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp",
   "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp",
   "output": "CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o"
+},
+{
+  "directory": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build",
+  "command": "/usr/bin/clang++ -DOPENSIM_WITH_CASADI -DOPENSIM_WITH_TROPTER -DSPDLOG_COMPILED_LIB -isystem \"/Applications/OpenSim 4.5/sdk/include\" -isystem \"/Applications/OpenSim 4.5/sdk/include/OpenSim\" -isystem \"/Applications/OpenSim 4.5/sdk/Simbody/include/simbody\" -isystem \"/Applications/OpenSim 4.5/sdk/spdlog/include\" -g -std=c++14 -arch x86_64 -F/Applications/Xcode_14.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks  -fno-char8_t -o CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp",
+  "file": "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp",
+  "output": "CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o"
 }
 ]

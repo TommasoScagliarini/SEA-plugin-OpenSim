@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp" "CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o" "gcc" "CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o.d"
   "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp" "CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o" "gcc" "CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o.d"
-  "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp" "CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o" "gcc" "CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o.d"
+  "/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp" "CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o" "gcc" "CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

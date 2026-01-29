@@ -72,19 +72,19 @@ include CMakeFiles/Test_SEA_App.dir/flags.make
 CMakeFiles/Test_SEA_App.dir/codegen:
 .PHONY : CMakeFiles/Test_SEA_App.dir/codegen
 
-CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o: CMakeFiles/Test_SEA_App.dir/flags.make
-CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp
-CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o: CMakeFiles/Test_SEA_App.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o -MF CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o.d -o CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp
+CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o: CMakeFiles/Test_SEA_App.dir/flags.make
+CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp
+CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o: CMakeFiles/Test_SEA_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o -MF CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o.d -o CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp
 
-CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp > CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.i
+CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp > CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.i
 
-CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp -o CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.s
+CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp -o CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.s
 
 CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o: CMakeFiles/Test_SEA_App.dir/flags.make
 CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp
@@ -100,16 +100,32 @@ CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp -o CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.s
 
+CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o: CMakeFiles/Test_SEA_App.dir/flags.make
+CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp
+CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o: CMakeFiles/Test_SEA_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o -MF CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o.d -o CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp
+
+CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp > CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.i
+
+CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp -o CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.s
+
 # Object files for target Test_SEA_App
 Test_SEA_App_OBJECTS = \
-"CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o" \
-"CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o"
+"CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o" \
+"CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o" \
+"CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o"
 
 # External object files for target Test_SEA_App
 Test_SEA_App_EXTERNAL_OBJECTS =
 
-Test_SEA_App: CMakeFiles/Test_SEA_App.dir/Test_SEA.cpp.o
+Test_SEA_App: CMakeFiles/Test_SEA_App.dir/Test_Sea_Acrobot.cpp.o
 Test_SEA_App: CMakeFiles/Test_SEA_App.dir/SeriesElasticActuator.cpp.o
+Test_SEA_App: CMakeFiles/Test_SEA_App.dir/CustomControl.cpp.o
 Test_SEA_App: CMakeFiles/Test_SEA_App.dir/build.make
 Test_SEA_App: /Applications/OpenSim\ 4.5/sdk/lib/libosimExampleComponents.dylib
 Test_SEA_App: /Applications/OpenSim\ 4.5/sdk/lib/libosimMoco.dylib
@@ -124,7 +140,7 @@ Test_SEA_App: /Applications/OpenSim\ 4.5/sdk/Simbody/lib/libSimTKmath.3.8.dylib
 Test_SEA_App: /Applications/OpenSim\ 4.5/sdk/Simbody/lib/libSimTKcommon.3.8.dylib
 Test_SEA_App: /Applications/OpenSim\ 4.5/sdk/lib/libosimLepton.dylib
 Test_SEA_App: CMakeFiles/Test_SEA_App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Test_SEA_App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Test_SEA_App"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test_SEA_App.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

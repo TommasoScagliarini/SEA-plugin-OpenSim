@@ -72,10 +72,24 @@ include CMakeFiles/exampleCustomActuator.dir/flags.make
 CMakeFiles/exampleCustomActuator.dir/codegen:
 .PHONY : CMakeFiles/exampleCustomActuator.dir/codegen
 
+CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o: CMakeFiles/exampleCustomActuator.dir/flags.make
+CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp
+CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o: CMakeFiles/exampleCustomActuator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o -MF CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o.d -o CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp
+
+CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp > CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.i
+
+CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/CustomControl.cpp -o CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.s
+
 CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o: CMakeFiles/exampleCustomActuator.dir/flags.make
 CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Plugin_interface.cpp
 CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o: CMakeFiles/exampleCustomActuator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o -MF CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o.d -o CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Plugin_interface.cpp
 
 CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.s: cmake_force
 CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o: CMakeFiles/exampleCustomActuator.dir/flags.make
 CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp
 CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o: CMakeFiles/exampleCustomActuator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o -MF CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o.d -o CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp
 
 CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.i: cmake_force
@@ -100,32 +114,34 @@ CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/SeriesElasticActuator.cpp -o CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.s
 
-CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o: CMakeFiles/exampleCustomActuator.dir/flags.make
-CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp
-CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o: CMakeFiles/exampleCustomActuator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o -MF CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o.d -o CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp
+CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o: CMakeFiles/exampleCustomActuator.dir/flags.make
+CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o: /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp
+CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o: CMakeFiles/exampleCustomActuator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o -MF CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o.d -o CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o -c /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp
 
-CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp > CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.i
+CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp > CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.i
 
-CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_SEA.cpp -o CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.s
+CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/Test_Sea_Acrobot.cpp -o CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.s
 
 # Object files for target exampleCustomActuator
 exampleCustomActuator_OBJECTS = \
+"CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o" \
 "CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o" \
 "CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o" \
-"CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o"
+"CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o"
 
 # External object files for target exampleCustomActuator
 exampleCustomActuator_EXTERNAL_OBJECTS =
 
+exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/CustomControl.cpp.o
 exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/Plugin_interface.cpp.o
 exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/SeriesElasticActuator.cpp.o
-exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/Test_SEA.cpp.o
+exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/Test_Sea_Acrobot.cpp.o
 exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/build.make
 exampleCustomActuator: /Applications/OpenSim\ 4.5/sdk/lib/libosimExampleComponents.dylib
 exampleCustomActuator: /Applications/OpenSim\ 4.5/sdk/lib/libosimMoco.dylib
@@ -140,7 +156,7 @@ exampleCustomActuator: /Applications/OpenSim\ 4.5/sdk/Simbody/lib/libSimTKmath.3
 exampleCustomActuator: /Applications/OpenSim\ 4.5/sdk/Simbody/lib/libSimTKcommon.3.8.dylib
 exampleCustomActuator: /Applications/OpenSim\ 4.5/sdk/lib/libosimLepton.dylib
 exampleCustomActuator: CMakeFiles/exampleCustomActuator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable exampleCustomActuator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tommy/Documents/Intership_OpenSim/SEA-plugin-OpenSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable exampleCustomActuator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exampleCustomActuator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
