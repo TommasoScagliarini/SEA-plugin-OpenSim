@@ -117,8 +117,8 @@ int main() {
             PrescribedController* controller = new PrescribedController();
             controller->addActuator(*sea);
             // Applica una coppia sinusoidale: 5 * sin(t)
-            //controller->prescribeControlForActuator("SEA", new Sine(5.0, 1.0, 0.0));
-            controller->prescribeControlForActuator("SEA", new Constant(0)); 
+            controller->prescribeControlForActuator("SEA", new Sine(5.0, 1.0, 0.0));
+            //controller->prescribeControlForActuator("SEA", new Constant(0)); 
             model.addController(controller);
         }
         
