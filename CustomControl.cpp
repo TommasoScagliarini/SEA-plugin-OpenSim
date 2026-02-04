@@ -21,13 +21,11 @@ double desiredModelZVelocity( double t ) {
 
 CustomController::CustomController() : Controller() {
     constructProperties();
-    // RIMOSSO: constructSocket_coordinate(); NON ESISTE
 }
 
 CustomController::CustomController(double aKp, double aKv) : Controller() 
 {
     constructProperties();
-    // RIMOSSO: constructSocket_coordinate(); NON ESISTE
     set_kp(aKp);
     set_kv(aKv);
 }

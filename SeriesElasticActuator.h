@@ -25,15 +25,9 @@ class Model;
         OpenSim_DECLARE_PROPERTY(stiffness, double, 
             "Spring stiffness (N*m/rad).");
 
-        //==============================================================================
-        // SOCKETS 
-        //==============================================================================
         OpenSim_DECLARE_SOCKET(coordinate, Coordinate, 
             "Coordinate on which SEA acts.");
 
-        //==============================================================================
-        // METODI PUBBLICI
-        //==============================================================================
         SeriesElasticActuator();
 
         SeriesElasticActuator(const std::string& name, double inertia, double damping, double k);
